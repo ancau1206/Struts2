@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE validators PUBLIC
+    "-//Apache Struts//XWork Validator 1.0.3//EN"
+    "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+
+	
+ 
+	<field name="staffs.codeId">
+		<field-validator type="stringlength">
+			<param name="minLength">3</param>
+			<param name="maxLength">10</param>
+			<param name="trim">true</param>
+			<message>Mã phòng ban phải từ 3 - 10 ký tự</message>
+		</field-validator>
+	</field>
+	
+	<field name="staffs.name">
+		<field-validator type="stringlength">
+			<param name="minLength">5</param>
+			<param name="maxLength">50</param>
+			<param name="trim">true</param>
+			<message>Tên nhân viên phải từ 5 - 50 ký tự</message>
+		</field-validator>
+	</field>
+	
+	<field name="staffs.email">
+		<field-validator type="stringlength">
+			<param name="minLength">8</param>
+			<param name="maxLength">30</param>
+			<param name="trim">true</param>
+			<message>Tên nhân viên phải từ 8 - 30 ký tự</message>
+		</field-validator>
+	</field>
+	
+	<field name="staffs.email">
+    <field-validator type="email">
+        <message>Sai định dạng email</message>
+    </field-validator>
+    </field>
+    
+   
+</validators>  
